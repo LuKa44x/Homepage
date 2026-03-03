@@ -6,8 +6,8 @@
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh; */
+    /* width: 100vw; */
 }
 
 body {
@@ -18,9 +18,8 @@ body {
     align-items: center;
 
 }
-
+/* header */
 header {
-    min-height: 30vh;
     width: 100%;
     padding: 3rem;
     outline: 1px solid black;
@@ -66,8 +65,8 @@ section.about {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap:5px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    gap:15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
 }
 
@@ -86,7 +85,60 @@ section.about > p {
     height: 24px;
 }
 
+/* main */
 
+main{
+    padding:2rem;
+    margin-top:50px;
+}
+
+main > .container{
+    outline: 1px solid red;
+}
+
+main>.container>h1{
+    padding:16px;
+  }
+
+section.projects{
+    outline: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 2rem;
+    padding:1rem;
+}
+
+.card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-height: 500px;
+}
+
+.card-detail{
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr; 
+    padding:0.5rem;
+}
+
+.card-detail > h4 
+{
+    font-size:18px;
+}
+
+.card-detail > p{
+    grid-column: span 2;
+}
+
+.icon{
+    margin:4px;
+}
+
+.screenshot{
+    width: 100%;
+    height: 200px;
+}
 /* tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     header > .container{
@@ -109,6 +161,12 @@ section.about{
     bottom: 65%; 
   }
   
+  /* main */
+
+  section.projects{
+    grid-template-columns: repeat(2, 300px);
+
+}
   
 }
 /* mobile */
@@ -133,7 +191,7 @@ section.about {
     padding: 0;
     box-shadow: none;
     align-items: center;
-    
+    background-color: transparent;
 }
 section.about > div{
     margin-left:0;
@@ -142,6 +200,25 @@ section.about > div{
     transform: skewY(-10deg);
     bottom: 55%; 
   }
+
+  /* main */
+  main{
+    padding:1rem;
+  }
+  main>.container>h1{
+    text-align: center;
+  }
+  section.projects{
+    grid-template-columns: repeat(1, minmax(200px, 300px));
+    padding:0;
+}
+.icons{
+    display: flex;
+}
+.card-detail{
+    padding-left:15px;
+    padding-right:15px;
+}
 }
 
 
