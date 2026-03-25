@@ -3,6 +3,8 @@
 A personal portfolio website built with **HTML & CSS**, structured responsively using modern layout techniques (Flexbox & CSS Grid).  
 This project serves as the foundation of my personal homepage/portfolio showcasing sections like header, projects grid, and a contact footer.
 
+https://luka44x.github.io/Homepage/src/
+
 ## 🌟 Overview
 
 This repository contains the source code for a simple static portfolio-style site.  
